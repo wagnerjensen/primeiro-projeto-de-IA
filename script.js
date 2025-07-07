@@ -4,10 +4,10 @@ async function cliqueiNoBotao() {
     let textoInput = document.querySelector(".input-aninacao").value
     let codigo = document.querySelector(".area_codigo")
     let areaResultado = document.querySelector(".area_resultado")
-    let botao = document,querySelector(".botao-magica")
+    let botao = document.querySelector(".botao-magica")
 
     botao.disabled = true;
-    botao.textContent = "criando...";
+    botao.textContent = "criando..."
     botao.style.background = "#888888";
 
     let resposta = await fetch(webhook, {
@@ -26,6 +26,6 @@ async function cliqueiNoBotao() {
     document.head.insertAdjacentHTML('beforeend', "<style>" + info.style + "</style>")
 
     botao.disabled = false;
-    botao.textContent = "Criar Mágica...";
+    botao.textContent = "Criar Mágica..."
     botao.style.background = "#37e359";
 }
